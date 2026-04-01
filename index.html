@@ -4,87 +4,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CineSearch Pro</title>
-
   <link rel="stylesheet" href="style.css" />
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <header class="navbar">
-    <h1 class="logo">CineSearch</h1>
-
-    <div class="nav-right">
-      <button id="themeToggle">Toggle Theme</button>
-    </div>
-  </header>
-
-
-  <section class="search-section">
-    <input 
-      type="text" 
-      id="searchInput" 
-      placeholder="Search movies or TV shows..." 
-    />
-
-    <button id="searchBtn">Search</button>
-  </section>
-
-
-  <section class="controls">
-
-    <select id="typeFilter">
-      <option value="">All</option>
-      <option value="movie">Movies</option>
-      <option value="tv">TV Shows</option>
-    </select>
-
-    <select id="yearFilter">
-      <option value="">All Years</option>
-      <option value="2024">2024</option>
-      <option value="2023">2023</option>
-      <option value="2022">2022</option>
-    </select>
-
-    <select id="sortSelect">
-      <option value="">Sort By</option>
-      <option value="popularity">Popularity</option>
-      <option value="rating">Rating</option>
-      <option value="az">A-Z</option>
-    </select>
-
-  </section>
-
-
-  <section class="trending">
-    <h2>Trending</h2>
-    <div id="trendingContainer" class="movie-grid"></div>
-  </section>
-
-
-  <section class="results">
-    <h2>Results</h2>
-    <div id="resultsContainer" class="movie-grid"></div>
-  </section>
-
-
-  <section class="pagination">
-    <button id="prevBtn">Previous</button>
-    <span id="pageNumber">1</span>
-    <button id="nextBtn">Next</button>
-  </section>
-
-
-  <div id="movieModal" class="modal hidden">
-    <div class="modal-content">
-      <span id="closeModal">&times;</span>
-      <div id="modalDetails"></div>
-    </div>
+<header>
+  <h1>🎬 CineSearch Pro</h1>
+  <div>
+    <button id="themeToggle">Dark Mode</button>
   </div>
+</header>
 
+<input type="text" id="searchInput" placeholder="Search movies, series, actors..." />
 
-  <script src="script.js"></script>
+<div class="filters">
+  <label for="genre">Genre</label>
+  <select id="genre">
+    <option value="">Select Genre</option>
+  </select>
+
+  <label for="sort">Sort</label>
+  <select id="sort">
+    <option value="popularity.desc">Popularity</option>
+    <option value="vote_average.desc">Rating</option>
+    <option value="release_date.desc">Latest</option>
+  </select>
+</div>
+
+<p id="loading">Loading...</p>
+
+<h2>Movies</h2>
+<div id="movies"></div>
+
+<div id="details"></div>
+
+<!-- IMPORTANT ORDER -->
+<script src="config.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
