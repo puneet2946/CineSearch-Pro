@@ -129,6 +129,12 @@ cineSearch-pro/
 
 ---
 
+## Demo Link
+
+* https://cine-search-pro-jade.vercel.app/
+
+---
+
 ## Best Practices Followed
 
 * Clean and modular code structure
