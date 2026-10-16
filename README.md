@@ -1,4 +1,4 @@
-# CineSearch Pro – Movie & TV Explorer
+# CineSearch Pro - Movie & TV Explorer
 
 ## Overview
 
@@ -153,6 +153,3 @@ CineSearch Pro demonstrates the practical implementation of JavaScript fundament
 ## Author
 
 Puneet
-BTech CSE (AI/ML) – Newton School of Technology
-
----
