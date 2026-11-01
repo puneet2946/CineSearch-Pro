@@ -11,7 +11,6 @@
   </p>
 
   <br>
-
   <p>
     A modern movie discovery experience designed for
     <br>
